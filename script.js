@@ -4,7 +4,7 @@ const livesDiv = document.getElementById('lives');
 let lives = 9;
 let secretWord = '';
 
-fetch('words_hangman.txt')
+fetch('words-hangman.txt')
 .then(response => response.text())
 .then(data => {
     words = data.split('\n');
